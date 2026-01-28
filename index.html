@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BookNest | Online Book Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📚 BookNest</h1>
+        <p>Your next favorite book, one click away</p>
+    </header>
+
+    <section class="controls">
+        <select id="categoryFilter">
+    <option value="all">All Categories</option>
+    <option value="fiction">Fiction</option>
+    <option value="non-fiction">Non-Fiction</option>
+    <option value="tech">Technology</option>
+  </select>
+
+        <select id="sortPrice">
+    <option value="">Sort by Price</option>
+    <option value="low-high">Low → High</option>
+    <option value="high-low">High → Low</option>
+  </select>
+
+        <select id="sortRating">
+    <option value="">Sort by Rating</option>
+    <option value="high">High → Low</option>
+  </select>
+    </section>
+
+    <section class="books" id="bookList">
+        <!-- Books injected by JS -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
